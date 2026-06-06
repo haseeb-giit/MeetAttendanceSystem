@@ -211,7 +211,14 @@ section{padding:80px 5%;}
 .built-by-card{max-width:540px;margin:0 auto;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:36px 28px;opacity:0;transform:translateY(40px);}
 .built-by-card:hover{background:rgba(255,255,255,.09);}
 .built-avatar{width:76px;height:76px;border-radius:50%;background:linear-gradient(135deg,var(--maroon),var(--maroon-light));margin:0 auto 16px;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:20px;font-weight:700;color:#fff;border:3px solid rgba(255,255,255,.15);transition:.3s;}
-.built-by-card:hover .built-avatar{transform:scale(1.08) rotate(3deg);}
+
+.built-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+  .built-by-card:hover .built-avatar{transform:scale(1.08) rotate(3deg);}
 .built-name{font-size:20px;font-weight:700;color:#fff;margin-bottom:4px;}
 .built-role{font-size:13px;color:rgba(255,255,255,.5);margin-bottom:18px;}
 .built-desc{font-size:14px;color:rgba(255,255,255,.65);line-height:1.7;margin-bottom:24px;}
